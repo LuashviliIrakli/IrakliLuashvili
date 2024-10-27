@@ -6,27 +6,27 @@ namespace HomeWorkRandomizer
     {
         static void Main(string[] args)
         {
-            int importedNumber1 = int.Parse(Console.ReadLine());
+            int importedNumber = int.Parse(Console.ReadLine());
 
             Random random = new Random();
             int randomNumber = random.Next(1, 10);
-            if (importedNumber1 == randomNumber)
+            if (importedNumber == randomNumber)
             {
                 Console.WriteLine("Cifri gamoicanit");
             }
             else
             {
                 Console.WriteLine("gtxovt scadot tavivad");
-                int importedNumber2 = int.Parse(Console.ReadLine());
-                if (importedNumber2 == randomNumber)
+                importedNumber = int.Parse(Console.ReadLine());
+                if (importedNumber == randomNumber)
                 {
                     Console.WriteLine("Cifri gamoicanit");
                 }
                 else
                 {
                     Console.WriteLine("gtxovt scadot tavivad");
-                    int importedNumber3 = int.Parse(Console.ReadLine());
-                    if (importedNumber3 == randomNumber)
+                    importedNumber = int.Parse(Console.ReadLine());
+                    if (importedNumber == randomNumber)
                     {
                         Console.WriteLine("Cifri gamoicanit");
                     }
