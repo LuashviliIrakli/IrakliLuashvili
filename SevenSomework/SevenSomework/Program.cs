@@ -47,7 +47,7 @@
         public void AddBook(Book book)
         {
             books.Add(book);
-            Console.WriteLine("book '{book.Title}' Added to library.");
+            Console.WriteLine($"book '{book.Title}' Added to library.");
         }
 
         public bool RemoveBook(string title)
@@ -56,12 +56,12 @@
             if (bookToRemove != null)
             {
                 books.Remove(bookToRemove);
-                Console.WriteLine("book '{title}' Removed from library.");
+                Console.WriteLine($"book '{title}' Removed from library.");
                 return true;
             }
             else
             {
-                Console.WriteLine("book '{title}' could not be found.");
+                Console.WriteLine($"book '{title}' could not be found.");
                 return false;
             }
         }
@@ -86,7 +86,7 @@
 
             library.PrintBooks();
 
-            Console.WriteLine("Count of books in the library: {library.Count}");
+            Console.WriteLine($"Count of books in the library: {library.Count}");
 
             library.RemoveBook("1984");
 
@@ -101,7 +101,7 @@
 
             library.RemoveBook("The Catcher in the Rye");
 
-            Console.WriteLine("Count of books in the library: {library.Count}");
+            Console.WriteLine($"Count of books in the library: {library.Count}");
         }
     }
 }
