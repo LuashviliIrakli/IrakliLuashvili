@@ -17,6 +17,12 @@
             Console.WriteLine("Sheiyvanet indexi");
             int index = int.Parse(Console.ReadLine());
 
+            if (index < 0 || index >= array.Length)
+            {
+                Console.WriteLine("Agnishnul indexze chanaweri/mnishvneloba ar arsebobs");
+                return;
+            }
+
             int result = SumOfDigitsAtIndex(array, index);
             Console.WriteLine($"Sum: {result}");
         }
