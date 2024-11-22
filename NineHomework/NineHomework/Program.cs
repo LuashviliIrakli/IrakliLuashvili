@@ -21,7 +21,7 @@
 
     public class Dog : Animal
     {
-        public Dog(string name, int age)
+        public Dog(string name, int age) : base(name, age) { }
 
         public override string MakeSound()
         {
@@ -31,7 +31,7 @@
 
     public class Cat : Animal
     {
-        public Cat(string name, int age)
+        public Cat(string name, int age) : base(name, age) { }
 
         public override string MakeSound()
         {
@@ -41,7 +41,7 @@
 
     public class Cow : Animal
     {
-        public Cow(string name, int age)
+        public Cow(string name, int age) : base(name, age) { }
 
         public override string MakeSound()
         {
